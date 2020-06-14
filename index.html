@@ -1,0 +1,228 @@
+<!--Made By Devansh Marwaha-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid-19 Updates</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                 <style>
+.img1{margin-top:-2em;
+margin-bottom:-1em;}
+
+marquee{font-weight:bold;}
+
+.nav{background-color:black;
+padding:25px;
+position:fixed;
+opacity:1;
+z-index:1;
+top:0;
+right:0;
+left:0;
+}
+
+.nav a{text-decoration:none;
+padding:25px;
+color:white;
+margin:auto;
+font-weight:bolder;}
+
+.nav a:hover{background-color:crimson;
+}
+
+.head1{color:crimson;}
+
+.head2{color:crimson;
+margin-top:-0.8em;}
+
+p{font-weight:bold;
+margin:0.8em;}
+
+.container{background:linear-gradient(to right ,lightblue,plum);
+width:90%;
+box-shadow:10px 10px 5px grey ;}
+
+.case{color:black;}
+#case{background-color:lightblue;
+width:150px;height:70px;
+border-color:transparent;
+border-style:solid;
+border-radius:25px;}
+#cases{color:blue;margin-top:-0.9em;}
+
+
+.death{color:black;}
+#death{background-color:lightpink;
+width:150px;height:70px;
+border-color:transparent;
+border-style:solid;
+border-radius:25px}
+#deaths{color:red;margin-top:-0.9em;}
+
+
+.rec{color:black;}
+#rec{background-color:aquamarine;
+width:150px;
+height:70px;
+border-color:transparent;
+border-style:solid;
+border-radius:25px}
+#recs{color:darkgreen;margin-top:-0.9em;}
+
+h5{margin-top:-1em;}
+
+
+#casess{color:blue;margin-top:-0.9em;}
+
+#deathss{color:red;margin-top:-0.9em;}
+
+#recss{color:darkgreen;margin-top:-0.9em;}
+
+
+.info{word-spacing:1px;
+background-color:none;
+text-align:center;
+margin-bottom:0.5em;
+word-spacing:0px;}
+
+
+.info p{margin:1.7em;
+font-style:italic;
+word-spacing:0px;
+font-size:15px;} 
+
+.info a{padding:15px;
+margin:0.5em;border-style:dotted;
+border-width:1px;
+border-color:black} 
+
+.info a:hover{background-color:lightgrey;
+outline:none}
+
+h3{margin-top:0.6em;}
+
+.sss{text-decoration:none;
+font-weight:bolder;
+background-color:white;
+padding:5px;
+border-radius:10px;}
+
+p{margin-top:-0.2em;}
+
+                 </style>
+                 <center>
+                  <div class="nav">
+        <a href="#ff">Home</a>
+        <a href="#case">Update</a>
+        <a href="#11">Contact</a>
+       </center> </head><br><br><br><br>
+    <body><center> 
+  <div class="container"><br>
+    <h1 id="ff" class="head1">CoronaVirus Updates</h1>
+    <h3 class="head2" >(Covid-19) India</h3><hr>
+    <marquee style="color:crimson;background-color:lightyellow;" behavior=scroll
+    >STAY HOME. SAVE LIVES. Help stop coronavirus.<span style="color:dodgerblue"> 1.) STAY home 2.) KEEP a safe distance 3.) WASH hands often 4.) COVER your cough 5.) SICK? Call the helpline</span>
+
+</marquee><br><br><a class="sss" href="https://drive.google.com/file/d/19rhGGig9VxdadXqKnfIhNH_LSHxw9g7V/view?usp=drivesdk" download>Click Here for Helpline Numbers</a><br><br>
+    <p>" 
+    COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV'.
+   "</p><hr><h1 class="head1">India</h1>
+    <div id="case"><h3 class="case">Total Cases</h3><h3 id="casess">-</h3></div><br>
+    <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deathss">-</h3></div><br>
+    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recss">-</h3></div>
+        <br>
+    </div><br>
+    <div class="container"><br>
+    <h1 class="head1">Select Your State</h1><img class="img1" src="https://drive.google.com/uc?id=18isGmGKeeAzY8QhCXk6pceBz5AnochmQ" style="height:70px;width:90px;"><br>
+    <select id="sel" value="State" style="background-color:navajowhite;width:50%;height:30px;border-radius:10px;border-color:navajowhite;outline:none">
+<option>Andaman and Nicobar</option>
+<option>Andhra Pradesh</option>
+<option>Arunachal Pradesh</option>
+<option>Assam</option>
+<option>Bihar</option>
+<option>Chandigarh</option>
+<option>Chhattisgarh</option>
+<option>Dadar Nagar Haveli</option>
+<option>Delhi</option>
+<option>Goa</option>
+<option>Gujarat</option>
+<option>Haryana</option>
+<option>Himachal Pradesh</option>
+<option>Jammu and Kashmir</option>
+<option>Jharkhand</option>
+<option>Karnataka</option>
+<option>Kerala</option>
+<option>Ladakh</option>
+<option>Madhya Pradesh</option>
+<option>Maharashtra</option>
+<option>Manipur</option>
+<option>Meghalaya</option>
+<option>Mizoram</option>
+<option>Nagaland</option>
+<option>Odisha</option>
+<option>Puducherry</option>
+<option>Punjab</option>
+<option>Rajasthan</option>
+<option>Sikkim</option>
+<option>Tamil Nadu</option>
+<option>Telengana</option>
+<option>Tripura</option>
+<option>Uttarakhand</option>
+<option>Uttar Pradesh</option>
+<option>West Bengal</option>
+    </select><br><br>
+    <div id="case"><h3 class="case">Total Cases</h3><h3 id="cases">-</h3></div><br>
+    <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deaths">-</h3></div><br>
+    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recs">-</h3></div>
+    <br>
+    </div>
+</center>
+    <script> fetch('https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true')
+    .then(res => res.json())
+    .then(res => {
+        casess.innerHTML=res.totalCases;
+        deathss.innerHTML=res.deaths;
+        recss.innerHTML=res.recovered;
+    })
+
+    $.ajax({
+  url: 'https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true',
+  dataType: 'json',
+  success: function(res) {
+    $(document).ready(function(){
+        $("#cases").html(res.regionData[0].totalCases);
+        $("#deaths").html(res.regionData[0].deceased);
+        $("#recs").html(res.regionData[0].recovered);
+    });
+}
+});    
+
+var Element=document.getElementById("sel");
+$.ajax({
+  url: 'https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true',
+  dataType: 'json',
+  success: function(res) {
+            Element.addEventListener('change', function() { 
+        var i = Element.selectedIndex;
+        $("#cases").html(res.regionData[i].totalCases);
+        $("#deaths").html(res.regionData[i].deceased);
+        $("#recs").html(res.regionData[i].recovered);
+});
+}
+});
+    </script></body><br>
+    
+ <footer>     
+    <center>
+  <div id="11" class="info"><br><hr><p>Contact Me:-</p>
+          <a href="mailto:devansh.marwaha400@gmail.com"><i class="fa fa-at" style="font-size:26px;color:black"></i></a>
+          <a href="tel:8968096689"><i class="fa fa-phone" style="font-size:26px;color:black"></i></a>
+          <a class="lol" href="https://github.com/devanshmarwaha"><i class="fa fa-github" style="font-size:26px;color:black"></i></a>
+          <a href="https://www.linkedin.com/in/devansh-marwaha-a548b918b"><i class="fa fa-linkedin" style="font-size:26px;color:black"></i></a>
+          <a href="http://instagram.com/devansh._.marwaha"><i class="fa fa-instagram" style="font-size:26px;color:black"></i></a><p>Made By Devansh Marwaha</p><hr><br>    <br>
+             </div>
+      </center>  
+</footer>
+</html>
+<!--Made by Devansh Marwaha-->
