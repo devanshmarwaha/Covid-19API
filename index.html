@@ -79,6 +79,15 @@ border-color:transparent;
 border-style:solid;
 border-radius:25px}
 #recs{color:darkgreen;margin-top:-0.9em;}
+                     
+.inf{color:black;}
+#inf{background-color:lightyellow;
+width:150px;
+height:70px;
+border-color:transparent;
+border-style:solid;
+border-radius:25px}
+#infs{color:darkgoldenrod;margin-top:-0.9em;}
 
 h5{margin-top:-1em;}
 
@@ -89,6 +98,7 @@ h5{margin-top:-1em;}
 
 #recss{color:darkgreen;margin-top:-0.9em;}
 
+#infss{color:darkgoldenrod;margin-top:-0.9em;}
 
 .info{word-spacing:1px;
 background-color:none;
@@ -142,6 +152,7 @@ p{margin-top:-0.2em;}
     <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deathss">-</h3></div><br>
     <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recss">-</h3></div>
         <br>
+    <div id="inf"><h3 class="inf">Active Cases</h3><h3 id="infss">-</h3></div><br>
     </div><br>
     <div class="container"><br>
     <h1 class="head1">Select Your State</h1><img class="img1" src="https://drive.google.com/uc?id=18isGmGKeeAzY8QhCXk6pceBz5AnochmQ" style="height:70px;width:90px;"><br>
@@ -184,7 +195,8 @@ p{margin-top:-0.2em;}
     </select><br><br>
     <div id="case"><h3 class="case">Total Cases</h3><h3 id="cases">-</h3></div><br>
     <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deaths">-</h3></div><br>
-    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recs">-</h3></div>
+    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recs">-</h3></div><br>
+    <div id="inf"><h3 class="inf">Active Cases</h3><h3 id="infs">-</h3></div>
     <br>
     </div>
 </center>
@@ -194,6 +206,7 @@ p{margin-top:-0.2em;}
         casess.innerHTML=res.totalCases;
         deathss.innerHTML=res.deaths;
         recss.innerHTML=res.recovered;
+        infss.innerHTML=res.activeCases
     })
 
     $.ajax({
@@ -204,7 +217,8 @@ p{margin-top:-0.2em;}
         $("#cases").html(res.regionData[0].totalCases);
         $("#deaths").html(res.regionData[0].deceased);
         $("#recs").html(res.regionData[0].recovered);
-    });
+        $("#infs").html(res.regionData[0].totalInfected);
+    })
 }
 });    
 
@@ -218,6 +232,7 @@ $.ajax({
         $("#cases").html(res.regionData[i].totalCases);
         $("#deaths").html(res.regionData[i].deceased);
         $("#recs").html(res.regionData[i].recovered);
+        $("#infs").html(res.regionData[i].totalInfected);
 });
 }
 });
