@@ -1,29 +1,19 @@
 <!--Made By Devansh Marwaha-->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head>
         <title>Covid-19 Updates</title>
-          <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169377748-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-169377748-1');
-</script>
                  <style>
 .img1{margin-top:-2em;
 margin-bottom:-1em;}
 
 marquee{font-weight:bold;}
+
 .nav{background-color:black;
-padding:15px;
+padding:25px;
 position:fixed;
 opacity:1;
 z-index:1;
@@ -33,7 +23,7 @@ left:0;
 }
 
 .nav a{text-decoration:none;
-padding:15px;
+padding:25px;
 color:white;
 margin:auto;
 font-weight:bolder;}
@@ -53,12 +43,13 @@ margin:0.8em;}
 width:90%;
 box-shadow:10px 10px 5px grey ;}
 
-.case{color:black;}
+.case{color:black}
 #case{background-color:lightblue;
 width:150px;height:70px;
 border-color:transparent;
 border-style:solid;
-border-radius:25px;}
+border-radius:25px;
+margin:0.5em}
 #cases{color:blue;margin-top:-0.9em;}
 
 
@@ -67,7 +58,8 @@ border-radius:25px;}
 width:150px;height:70px;
 border-color:transparent;
 border-style:solid;
-border-radius:25px}
+border-radius:25px;
+margin:0.5em}
 #deaths{color:red;margin-top:-0.9em;}
 
 
@@ -77,28 +69,32 @@ width:150px;
 height:70px;
 border-color:transparent;
 border-style:solid;
-border-radius:25px}
+border-radius:25px;
+margin:0.5em}
 #recs{color:darkgreen;margin-top:-0.9em;}
-                     
+
 .inf{color:black;}
 #inf{background-color:lightyellow;
 width:150px;
 height:70px;
 border-color:transparent;
 border-style:solid;
-border-radius:25px}
+border-radius:25px;
+margin:0.5em}
 #infs{color:darkgoldenrod;margin-top:-0.9em;}
+
 
 h5{margin-top:-1em;}
 
 
-#casess{color:blue;margin-top:-0.9em;}
+#casess{color:blue;margin-top:-0.9em}
 
 #deathss{color:red;margin-top:-0.9em;}
 
-#recss{color:darkgreen;margin-top:-0.9em;}
+#recss{color:darkgreen;margin-top:-0.9em}
 
-#infss{color:darkgoldenrod;margin-top:-0.9em;}
+#infss{color:darkgoldenrod;margin-top:-0.9em}
+
 
 .info{word-spacing:1px;
 background-color:none;
@@ -112,8 +108,8 @@ font-style:italic;
 word-spacing:0px;
 font-size:15px;} 
 
-.info a{padding:8px;
-margin:0.2em;border-style:dotted;
+.info a{padding:15px;
+margin:0.5em;border-style:dotted;
 border-width:1px;
 border-color:black} 
 
@@ -130,29 +126,39 @@ border-radius:10px;}
 
 p{margin-top:-0.2em;}
 
+.fl{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+}
+
                  </style>
                  <center>
                   <div class="nav">
         <a href="#ff">Home</a>
         <a href="#case">Update</a>
         <a href="#11">Contact</a>
-       </center> </head><br><br><br><br>
-    <body><center> 
+       </center> </head><br><br> <br><br>
+    <body><center>  
+    
   <div class="container"><br>
     <h1 id="ff" class="head1">CoronaVirus Updates</h1>
     <h3 class="head2" >(Covid-19) India</h3><hr>
     <marquee style="color:crimson;background-color:lightyellow;" behavior=scroll
     >STAY HOME. SAVE LIVES. Help stop coronavirus.<span style="color:dodgerblue"> 1.) STAY home 2.) KEEP a safe distance 3.) WASH hands often 4.) COVER your cough 5.) SICK? Call the helpline</span>
 
-</marquee><br><br><a class="sss" href="https://drive.google.com/file/d/19rhGGig9VxdadXqKnfIhNH_LSHxw9g7V/view?usp=drivesdk" download>Click Here for Helpline Numbers</a><br><br>
-    <p>" 
-    COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV'.
-   "</p><hr><h1 class="head1">India</h1>
-    <div id="case"><h3 class="case">Total Cases</h3><h3 id="casess">-</h3></div><br>
+</marquee><br><br><p id="lol">Hi i am devansh marwaha.</p><a class="sss" href="https://drive.google.com/file/d/19rhGGig9VxdadXqKnfIhNH_LSHxw9g7V/view?usp=drivesdk" download>Click Here for Helpline Numbers</a><br>
+    <h1 class="head1">India</h1>
+   <div class="fl">
+    <div id="case"><h3 class="case">Total Cases</h3>
+    <h3 id="casess">-</h3></div><br>
     <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deathss">-</h3></div><br>
-    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recss">-</h3></div>
+    <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recss">-</h3></div><br>
+    <div id="inf"><h3 class="inf">Active Cases</h3><h3 id="infss">-</h3></div>
         <br>
-    <div id="inf"><h3 class="inf">Active Cases</h3><h3 id="infss">-</h3></div><br>
+        </div>
     </div><br>
     <div class="container"><br>
     <h1 class="head1">Select Your State</h1><img class="img1" src="https://drive.google.com/uc?id=18isGmGKeeAzY8QhCXk6pceBz5AnochmQ" style="height:70px;width:90px;"><br>
@@ -193,10 +199,14 @@ p{margin-top:-0.2em;}
 <option>Uttar Pradesh</option>
 <option>West Bengal</option>
     </select><br><br>
-    <div id="case"><h3 class="case">Total Cases</h3><h3 id="cases">-</h3></div><br>
+    <div class="fl">
+    <div id="case"><h3 class="case">Active Cases</h3><h3 id="cases">-</h3></div><br>
     <div id="death"><h3 class="death">Total Deaths</h3><h3 id="deaths">-</h3></div><br>
     <div id="rec"><h3 class="rec">Total Recovers</h3><h3 id="recs">-</h3></div><br>
-    <div id="inf"><h3 class="inf">Active Cases</h3><h3 id="infs">-</h3></div>
+    <div id="inf"><h3 class="inf">Total Infected</h3><h3 id="infs">-</h3></div>
+    </div>
+    
+    
     <br>
     </div>
 </center>
@@ -214,11 +224,12 @@ p{margin-top:-0.2em;}
   dataType: 'json',
   success: function(res) {
     $(document).ready(function(){
-        $("#cases").html(res.regionData[0].totalCases);
+        $("#cases").html(res.regionData[0].activeCases);
         $("#deaths").html(res.regionData[0].deceased);
         $("#recs").html(res.regionData[0].recovered);
-        $("#infs").html(res.regionData[0].totalInfected);
-    })
+        $("#infs").html(res.regionData[0].totalInfected)
+        
+    });
 }
 });    
 
@@ -229,10 +240,10 @@ $.ajax({
   success: function(res) {
             Element.addEventListener('change', function() { 
         var i = Element.selectedIndex;
-        $("#cases").html(res.regionData[i].totalCases);
+        $("#cases").html(res.regionData[i].activeCases);
         $("#deaths").html(res.regionData[i].deceased);
         $("#recs").html(res.regionData[i].recovered);
-        $("#infs").html(res.regionData[i].totalInfected);
+        $("#infs").html(res.regionData[i].totalInfected)
 });
 }
 });
